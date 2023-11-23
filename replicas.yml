@@ -1,20 +1,20 @@
 apiVersion: v1
 kind: ReplicationController
 metadata:
-  name: nginxs
+  name: nginx
 spec:
   replicas: 5
   selector:
-    app: demo
+    app: demo1
   template:
     metadata:
       name: demo
       labels:
-        app: demo
+        app: demo1
     spec:
       containers:
-        - name: nginxs
-          image: nginx
+        - name: nginx
+          image: shivendra013/shiva
           ports:
             - containerPort: 80
               name: ngin
