@@ -8,14 +8,14 @@ spec:
     app: demo1
   template:
     metadata:
-      name: demo
+      name: demos
       labels:
         app: demo1
     spec:
       containers:
-        - name: nginx
+        - name: ngin
           image: shivendra013/shiva
           ports:
             - containerPort: 80
-              name: ngin
+              name: nginx
 
